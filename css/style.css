@@ -1,0 +1,236 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 156px;
+}
+:root {
+  --color1white: #fff;
+  --color2gray: #9ca3af;
+  --color2black: #000;
+}
+/******************************************************************* шапка ****************************************************************/
+
+.header {
+  margin: 0 auto;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  min-height: 500px;
+  padding: 116px;
+  background-color: #4694dc;
+}
+.header-text {
+}
+.h1 {
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0px;
+  margin-bottom: 70px;
+  color: var(--color1white);
+}
+.p-header {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 437px;
+  margin-bottom: 46px;
+  color: var(--color1white);
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 194px;
+  height: 60px;
+  background-color: #fff;
+}
+.button-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  border: none;
+  color: var(--color2black);
+  background-color: #fff;
+}
+
+/******************************************************************* Сервис ****************************************************************/
+
+.our_servise {
+  text-align: center;
+  margin-bottom: 180px;
+}
+.our_service-text {
+}
+.our_servise-h2 {
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 3.3px;
+  color: var(--color2black);
+}
+.our_service-p {
+  margin: 0 auto;
+  margin-bottom: 120px;
+  width: 465px;
+  height: 48px;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  color: var(--color2gray);
+}
+.our_service-block {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  max-width: 888px;
+  margin: 0 auto;
+  margin-bottom: 160px;
+}
+.our_service-items {
+  width: 280px;
+  height: 120px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.our_service-img {
+  align-self: center;
+}
+.our_service-items-p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--color2gray);
+}
+
+/******************************************************************* Media ****************************************************************/
+@media screen and (max-width: 1366px) {
+  .talant .container {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .talant-block {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  .our_service-items {
+    font-size: 14px;
+  }
+  .button {
+    width: 160px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 36px;
+  }
+}
+/******************************************************************* Таланты ****************************************************************/
+.talant {
+  text-align: center;
+}
+.talant-text {
+}
+.talant-h2 {
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 3.3px;
+  color: var(--color2black);
+}
+.talant-p {
+  margin: 0 auto;
+  margin-bottom: 80px;
+  text-align: center;
+  width: 465px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  color: var(--color2gray);
+}
+
+.talant-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 880px;
+  margin: 0 auto;
+  margin-bottom: 142px;
+}
+.talant-items {
+  display: flex;
+  padding: 20px;
+  max-width: 260px;
+  width: 100%;
+  height: 76px;
+  align-items: center;
+}
+.talant-img {
+  align-self: center;
+  margin-right: 8px;
+}
+.talant-block-p {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.talant-items-p-top {
+  margin-left: 10px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  margin: 0;
+  color: var(--color2black);
+}
+.talant-items-p-bottom {
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  color: var(--color2gray);
+}
