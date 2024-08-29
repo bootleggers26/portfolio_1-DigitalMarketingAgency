@@ -189,8 +189,18 @@ body {
     font-size: 14px;
   }
   .our_service-block {
-    align-content: center;
+    align-content: cent er;
     flex-wrap: wrap;
+  }
+  .form-input {
+    max-width: 100%; /* Поля ввода будут занимать всю ширину контейнера */
+  }
+
+  .form-textarea {
+    max-width: 100%; /* Поле для текста будет занимать всю ширину контейнера */
+  }
+  .form-group {
+    flex-direction: column; /* Размещаем поля ввода вертикально */
   }
 }
 @media screen and (max-width: 400px) {
@@ -272,9 +282,7 @@ body {
   margin: 0;
   color: var(--color2gray);
 }
-
-/* Стили для модального окна */
-
+/******************************************************************* Стили для модального окна ***********************************************/
 .modal {
   display: none; /* Скрыть окно по умолчанию */
   position: fixed;
@@ -291,7 +299,7 @@ body {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #888;
+  border: 1px solid var(--color2blue);
   width: 80%;
   max-width: 600px;
 }
@@ -299,14 +307,19 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: center;
+}
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .form-input {
   font-family: "Montserrat", sans-serif;
-  width: 255px;
+  width: 100%;
+  max-width: 255px;
   height: 50px;
   padding: 0 15px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color2blue);
   border-radius: 5px;
   background-color: #fff;
   font-size: 14px;
@@ -317,10 +330,11 @@ body {
 }
 .form-textarea {
   font-family: "Montserrat", sans-serif;
-  width: 516px;
+  width: 100%;
+  max-width: 529px;
   height: 175px;
   padding: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color2blue);
   border-radius: 5px;
   background-color: #fff;
   resize: none;
@@ -332,7 +346,7 @@ body {
 }
 .form-input:focus,
 .form-textarea:focus {
-  background-color: #f0eeeea4;
+  background-color: #f5f2f2a4;
   transition: background-color 0.3s ease;
   outline: none; /* Убирает стандартную рамку при фокусе */
   box-shadow: none; /* Убирает возможную тень */
@@ -343,30 +357,40 @@ body {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  margin-left: 10px;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: var(--color2blue);
   text-decoration: none;
   cursor: pointer;
 }
 
 .button-modal {
   font-family: "Montserrat", sans-serif;
-  align-self: center;
   width: 190px;
   height: 55px;
   margin-top: 27px;
   margin-bottom: 48px;
-  text-decoration: none;
+
   border: none;
   cursor: pointer;
 }
 .button-modal a {
+  display: block;
+  color: inherit;
   text-decoration: none;
   color: var(--color2black);
+  height: 100%;
+  width: 100%;
+  line-height: 55px;
+  text-align: center;
 }
 .button-modal:hover {
-  background-color: #e2e2e2;
+  background-color: var(--color2blue);
+}
+a:hover {
+  background-color: var(--color2blue);
+  color: var(--color1white);
 }
