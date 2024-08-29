@@ -24,6 +24,7 @@ body {
   --color1white: #fff;
   --color2gray: #9ca3af;
   --color2black: #000;
+  --color2blue: #4694dc;
 }
 /******************************************************************* шапка ****************************************************************/
 
@@ -35,7 +36,8 @@ body {
   width: auto;
   min-height: 500px;
   padding: 116px;
-  background-color: #4694dc;
+  background-color: var(--color2blue);
+  padding-top: 82px;
 }
 .header-text {
 }
@@ -43,8 +45,7 @@ body {
   font-size: 56px;
   font-style: normal;
   font-weight: 600;
-  line-height: 0px;
-  margin-bottom: 70px;
+  margin-bottom: 34px;
   color: var(--color1white);
 }
 .p-header {
@@ -53,10 +54,10 @@ body {
   font-weight: 400;
   line-height: 24px;
   max-width: 437px;
-  margin-bottom: 46px;
+  margin-bottom: 47px;
   color: var(--color1white);
 }
-.button {
+.button-text {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,18 +65,18 @@ body {
   width: 194px;
   height: 60px;
   cursor: pointer;
-  background-color: #fff;
-}
-.button-text {
+  background-color: var(--color1white);
+  cursor: pointer;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
+  letter-spacing: 1.1px;
   border: none;
   cursor: pointer;
   color: var(--color2black);
-  background-color: #fff;
+  background-color: var(--color1white);
+}
+.button-text:hover {
+  background-color: #136dc1;
+  color: var(--color1white);
 }
 
 /******************************************************************* Сервис ****************************************************************/
@@ -99,7 +100,7 @@ body {
 .our_service-p {
   margin: 0 auto;
   margin-bottom: 120px;
-  width: 465px;
+  max-width: 465px;
   height: 48px;
   text-align: center;
   font-size: 16px;
@@ -127,6 +128,17 @@ body {
 }
 .our_service-img {
   align-self: center;
+  cursor: pointer;
+}
+.first-img {
+  padding-top: 10px;
+}
+.our_service-img:hover {
+  filter: invert(23%) sepia(95%) saturate(10000%) hue-rotate(190deg)
+    brightness(90%) contrast(95%);
+}
+.third-img {
+  padding-top: 4px;
 }
 .our_service-items-p {
   font-size: 16px;
@@ -140,6 +152,23 @@ body {
 @media screen and (max-width: 1366px) {
   .talant .container {
     padding: 0 15px;
+  }
+  .h1,
+  .p-header,
+  .button {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .h1 {
+    margin-top: 37px;
+    margin-bottom: 34px;
+  }
+  .p-header {
+    margin-bottom: 47px;
+  }
+  .header {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -159,10 +188,17 @@ body {
     width: 160px;
     font-size: 14px;
   }
+  .our_service-block {
+    align-content: center;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 400px) {
   .container {
     padding: 36px;
+  }
+  .h1 {
+    font-size: 45px;
   }
 }
 /******************************************************************* Таланты ****************************************************************/
@@ -185,7 +221,7 @@ body {
   margin: 0 auto;
   margin-bottom: 80px;
   text-align: center;
-  width: 465px;
+  max-width: 465px;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
