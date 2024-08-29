@@ -359,21 +359,18 @@ body {
   font-weight: bold;
   margin-left: 10px;
 }
-
 .close:hover,
 .close:focus {
   color: var(--color2blue);
   text-decoration: none;
   cursor: pointer;
 }
-
 .button-modal {
   font-family: "Montserrat", sans-serif;
   width: 190px;
   height: 55px;
   margin-top: 27px;
   margin-bottom: 48px;
-
   border: none;
   cursor: pointer;
 }
